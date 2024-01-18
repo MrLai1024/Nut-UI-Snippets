@@ -1,0 +1,15 @@
+{
+  "Basic: Button": {
+    "prefix": "nbut",
+    "body": [
+      "<nut-button type=\"${1|primary,info,default,success,warning,danger|}\" size=\"${2|normal,large,small,mini|}\" @tap=\"$3\">${4}</nut-button>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-button>"
+  },
+  "Basic: Cell": {
+    "prefix": "ncel",
+    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
+    "description": "Nut UI <nut-cell>"
+  }
+}

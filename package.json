@@ -3,12 +3,17 @@
   "displayName": "Nut UI Snippets",
   "description": "nut ui组件标签快捷键，支持vue3 react",
   "version": "0.0.1",
+  "publisher": "Jason Lai",
   "author": {
     "name": "Jason Lai"
   },
   "engines": {
     "vscode": "^1.85.0"
   },
+  "activationEvents": [
+    "onLanguage:vuejs"
+  ],
+  "main": "./out/extension",
   "categories": [
     "Snippets"
   ],
@@ -17,7 +22,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/nut-ui.json"
+        "path": "./snippets/nut-ui-vue.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/nut-ui-vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/nut-ui-vue.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/nut-ui-vue.json"
       }
     ]
   }
