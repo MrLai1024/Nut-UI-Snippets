@@ -1,0 +1,24 @@
+{
+  "name": "nut-ui-snippets",
+  "displayName": "Nut UI Snippets",
+  "description": "nut ui组件标签快捷键，支持vue3 react",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jason Lai"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "license": "MIT",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/nut-ui.json"
+      }
+    ]
+  }
+}
