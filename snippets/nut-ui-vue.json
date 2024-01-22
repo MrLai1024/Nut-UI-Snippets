@@ -13,382 +13,382 @@
     "description": "Nut UI <nut-cell>"
   },
   "Basic: ConfigProvider": {
-    "prefix": "nconfig",
+    "prefix": "nconf",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Basic: Overlay": {
-    "prefix": "noverlay",
+    "prefix": "novl",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Basic: Popup": {
-    "prefix": "npopup",
+    "prefix": "npop",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Layout: Divider": {
-    "prefix": "ndivider",
+    "prefix": "ndiv",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Layout: Grid": {
-    "prefix": "ngrid",
+    "prefix": "ngri",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Layout: Layout": {
-    "prefix": "nlayout",
+    "prefix": "nlyt",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Layout: Space": {
-    "prefix": "nspace",
+    "prefix": "nspa",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Layout: Sticky": {
-    "prefix": "nstiky",
+    "prefix": "nsti",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Elevator": {
-    "prefix": "ncel",
+    "prefix": "nevt",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: FixedNav": {
-    "prefix": "ncel",
+    "prefix": "nfin",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Indicator": {
-    "prefix": "ncel",
+    "prefix": "nic",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Menu": {
-    "prefix": "ncel",
+    "prefix": "nmenu",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Navbar": {
-    "prefix": "ncel",
+    "prefix": "nnab",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Pagination": {
-    "prefix": "ncel",
+    "prefix": "npag",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: SideNavbar": {
-    "prefix": "ncel",
+    "prefix": "nsnb",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Tabbar": {
-    "prefix": "ncel",
+    "prefix": "ntab",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Navigation: Tabs": {
-    "prefix": "ncel",
+    "prefix": "ntbs",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Calendar": {
-    "prefix": "ncel",
+    "prefix": "ncal",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Cascader": {
-    "prefix": "ncel",
+    "prefix": "ncas",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Checkbox": {
-    "prefix": "ncel",
+    "prefix": "ncb",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: DatePicker": {
-    "prefix": "ncel",
+    "prefix": "ndp",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Form": {
-    "prefix": "ncel",
+    "prefix": "nfo",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Input": {
-    "prefix": "ncel",
+    "prefix": "ni",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: InputNumber": {
-    "prefix": "ncel",
+    "prefix": "nin",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: NumberKeyboard": {
-    "prefix": "ncel",
+    "prefix": "nnk",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Picker": {
-    "prefix": "ncel",
+    "prefix": "npi",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Radio": {
-    "prefix": "ncel",
+    "prefix": "nrd",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Range": {
-    "prefix": "ncel",
+    "prefix": "nrg",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Rate": {
-    "prefix": "ncel",
+    "prefix": "nrat",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Searchbar": {
-    "prefix": "ncel",
+    "prefix": "nsb",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: ShortPassword": {
-    "prefix": "ncel",
+    "prefix": "nspw",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Textarea": {
-    "prefix": "ncel",
+    "prefix": "ntxa",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Form: Uploader": {
-    "prefix": "ncel",
+    "prefix": "nupl",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: ActionSheet": {
-    "prefix": "ncel",
+    "prefix": "nas",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Backtop": {
-    "prefix": "ncel",
+    "prefix": "nbt",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Dialog": {
-    "prefix": "ncel",
+    "prefix": "ndi",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Drag": {
-    "prefix": "ncel",
+    "prefix": "ndr",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Notify": {
-    "prefix": "ncel",
+    "prefix": "nnot",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Swipe": {
-    "prefix": "ncel",
+    "prefix": "nswp",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Switch": {
-    "prefix": "ncel",
+    "prefix": "nswt",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Feedback: Toast": {
-    "prefix": "ncel",
+    "prefix": "ntoa",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Animate": {
-    "prefix": "ncel",
+    "prefix": "nani",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Avatar": {
-    "prefix": "ncel",
+    "prefix": "nava",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Badge": {
-    "prefix": "ncel",
+    "prefix": "nbad",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: CircleProgress": {
-    "prefix": "ncel",
+    "prefix": "ncp",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Collapse": {
-    "prefix": "ncel",
+    "prefix": "ncla",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Countdown": {
-    "prefix": "ncel",
+    "prefix": "ncd",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Countup": {
-    "prefix": "ncel",
+    "prefix": "ncu",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Ellipsis": {
-    "prefix": "ncel",
+    "prefix": "neli",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Empty": {
-    "prefix": "ncel",
+    "prefix": "nemp",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: ImagePreview": {
-    "prefix": "ncel",
+    "prefix": "nip",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: List": {
-    "prefix": "ncel",
+    "prefix": "nli",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Noticebar": {
-    "prefix": "ncel",
+    "prefix": "nnob",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Popover": {
-    "prefix": "ncel",
+    "prefix": "npov",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Price": {
-    "prefix": "ncel",
+    "prefix": "npri",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Progress": {
-    "prefix": "ncel",
+    "prefix": "npro",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Skeleton": {
-    "prefix": "ncel",
+    "prefix": "nske",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Steps": {
-    "prefix": "ncel",
+    "prefix": "nste",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Swiper": {
-    "prefix": "ncel",
+    "prefix": "nswi",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Table": {
-    "prefix": "ncel",
+    "prefix": "nt",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Tag ": {
-    "prefix": "ncel",
+    "prefix": "ntag",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Tour": {
-    "prefix": "ncel",
+    "prefix": "ntou",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: TrendArrow": {
-    "prefix": "ncel",
+    "prefix": "ntra",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Display: Watermark": {
-    "prefix": "ncel",
+    "prefix": "nwm",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Address": {
-    "prefix": "ncel",
+    "prefix": "nar",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: AddressList": {
-    "prefix": "ncel",
+    "prefix": "narl",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: AvatarCropper": {
-    "prefix": "ncel",
+    "prefix": "nac",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Barrage": {
-    "prefix": "ncel",
+    "prefix": "nbar",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Card": {
-    "prefix": "ncel",
+    "prefix": "ncard",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Category": {
-    "prefix": "ncel",
+    "prefix": "ncg",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Comment": {
-    "prefix": "ncel",
+    "prefix": "ncm",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Ecard": {
-    "prefix": "ncel",
+    "prefix": "nec",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Invoice": {
-    "prefix": "ncel",
+    "prefix": "niv",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Signature": {
-    "prefix": "ncel",
+    "prefix": "nsig",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: Sku": {
-    "prefix": "ncel",
+    "prefix": "nsku",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   },
   "Character: TimeSelect": {
-    "prefix": "ncel",
+    "prefix": "nts",
     "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
     "description": "Nut UI <nut-cell>"
   }
