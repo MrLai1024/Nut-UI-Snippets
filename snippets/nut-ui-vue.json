@@ -13,29 +13,50 @@
     "description": "Nut UI <nut-cell>"
   },
   "Basic: ConfigProvider": {
-    "prefix": "nconf",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "ncop",
+    "body": [
+      "<nut-config-provider :theme=\"${1}\" :theme-vars=\"${2}\">${3}</nut-config-provider>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-config-provider>"
   },
   "Basic: Overlay": {
-    "prefix": "novl",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "nol",
+    "body": [
+      "<nut-overlay v-model:visible=\"${1}\" :close-on-click-overlay=\"${2}\" :lock-scroll=\"${3}\" :duration=\"${4}\" :z-index=\"${5}\">${6}</nut-overlay>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-overlay>"
   },
   "Basic: Popup": {
     "prefix": "npop",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-popup v-model:visible=\"${1}\" position=\"${2}\" closeable>${3}</nut-popup>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-popup>"
   },
   "Layout: Divider": {
-    "prefix": "ndiv",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "ndivider",
+    "body": [
+      "<nut-divider content-position=\"${1}\" direction=\"${2}\">${3}</nut-divider>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-divider>"
   },
   "Layout: Grid": {
-    "prefix": "ngri",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "ngrid",
+    "body": [
+      "<nut-grid :column-num=\"$1\" direction=\"${2|vertical|horizontal|}\">",
+      "\t<nut-grid-item v-for=\"(${3:grid}, ${4:index}) in ${5:grids}",
+      "\t:key=\"${6:index}\"",
+      "\ttext=\"$7\"",
+      "\t\\>",
+      "\t</nut-grid-item>",
+      "</nut-grid>",
+      "$8"
+    ],
+    "description": "Nut UI <nut-grid>"
   },
   "Layout: Layout": {
     "prefix": "nlyt",
