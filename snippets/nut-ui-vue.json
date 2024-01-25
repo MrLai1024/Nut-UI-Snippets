@@ -60,123 +60,231 @@
   },
   "Layout: Layout": {
     "prefix": "nlyt",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-row type=\"$1\">",
+      "\t<nut-col :span=\"$3\">",
+      "\t$4",
+      "\t</nut-col>",
+      "</nut-row>",
+      "$5"
+    ],
+    "description": "Nut UI <nut-row>"
   },
   "Layout: Space": {
     "prefix": "nspa",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-space direction=\"${1|direction|horizontal|}\">${2}</nut-space>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-space>"
   },
   "Layout: Sticky": {
     "prefix": "nsti",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-sticky top=\"${1}\">${2}</nut-sticky>", "${3}"],
+    "description": "Nut UI <nut-sticky>"
   },
   "Navigation: Elevator": {
     "prefix": "nevt",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-elevator :index-list=\"${1}\">${2}</nut-elevator>", "${3}"],
+    "description": "Nut UI <nut-elevator>"
   },
   "Navigation: FixedNav": {
-    "prefix": "nfin",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "nfn",
+    "body": [
+      "<nut-fixed-nav v-model:visible=\"${1}\" :nav-list=\"$2\" :position=\"$3\">${4}</nut-fixed-nav>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-fixed-nav>"
   },
   "Navigation: Indicator": {
     "prefix": "nic",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-indicator :size=\"${1}\" :current=\"$2\">${3}</nut-indicator>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-indicator>"
   },
   "Navigation: Menu": {
     "prefix": "nmenu",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-menu title=\"${1}\">",
+      "\t<nut-menu-item v-model=\"$2\" />",
+      "</nut-menu>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-menu>"
   },
   "Navigation: Navbar": {
-    "prefix": "nnab",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "prefix": "nnb",
+    "body": ["<nut-navbar title=\"${1}\">${2}</nut-navbar>", "${3}"],
+    "description": "Nut UI <nut-navbar>"
   },
   "Navigation: Pagination": {
     "prefix": "npag",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-pagination v-model=\"$1\">${2}</nut-pagination>", "${3}"],
+    "description": "Nut UI <nut-pagination>"
   },
   "Navigation: SideNavbar": {
     "prefix": "nsnb",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-side-navbar>",
+      "\t<nut-sub-side-navbar title=\"$1\" ikey=\"$2\">",
+      "\t\t<nut-side-navbar-item title=\"$3\" ikey=\"$4\">",
+      "\t\t</nut-side-navbar-item>",
+      "\t</nut-sub-side-navbar>",
+      "</nut-side-navbar>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-side-navbar>"
   },
   "Navigation: Tabbar": {
     "prefix": "ntab",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-tabbar @tab-switch=\"${1}\">",
+      "\t<nut-tabbar-item>",
+      "\t\t<template #icon>",
+      "\t\t\t$2",
+      "\t\t</template #icon>",
+      "\t</nut-tabbar-item>",
+      "</nut-tabbar>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-tabbar>"
   },
   "Navigation: Tabs": {
     "prefix": "ntbs",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-tabs v-model=\"$1\">",
+      "\t<nut-tab-pane title=\"$2\" pane-key=\"$3\">",
+      "\t</nut-tab-pane>",
+      "</nut-tabs>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-Tabs>"
   },
   "Form: Calendar": {
     "prefix": "ncal",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-calendar ",
+      "\tv-model:visible=\"$1\"",
+      "\t:default-value=\"$2\"",
+      "\t:start-date=\"$3\"",
+      "\t:end-date=\"$4\"",
+      "\t@close=\"$5\"",
+      "\t@choose=\"$6\"",
+      ">",
+      "</nut-calendar>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-calendar>"
   },
   "Form: Cascader": {
     "prefix": "ncas",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-cascader ",
+      "\ttitle=\"$1\"",
+      "\tv-model:visible=\"$2\"",
+      "\tv-model=\"$3\"",
+      "\t@change=\"$4\"",
+      "\t@pathChange\"$5\"",
+      "\t:options=\"$6\"",
+      ">",
+      "</nut-cascader>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-cascader>"
   },
   "Form: Checkbox": {
     "prefix": "ncb",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-checkbox v-model=\"${1}\" label=\"$2\">${3}</nut-checkbox>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-checkbox>"
   },
   "Form: DatePicker": {
     "prefix": "ndp",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-date-picker ",
+      "\tv-model=\"$1\"",
+      "\t:min-date=\"$2\"",
+      "\t:max-date=\"$3\"",
+      "\t:three-dimensional=\"$4\"",
+      "\t@confirm\"$5\"",
+      ">",
+      "</nut-date-picker>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-date-picker>"
   },
   "Form: Form": {
     "prefix": "nfo",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-form>",
+      "\t<nut-form-item label=\"$1\">",
+      "\t\t<nut-input v-model=\"$2\">",
+      "\t\t\t$3",
+      "\t\t</nut-input>",
+      "\t</nut-form-item>",
+      "</nut-form>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-form>"
   },
   "Form: Input": {
     "prefix": "ni",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-input v-model==\"${1}\" placeholder=\"\">${2}</nut-input>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-input>"
   },
   "Form: InputNumber": {
     "prefix": "nin",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-input-number v-model=\"${1}\">${2}</nut-input-number>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-input-number>"
   },
   "Form: NumberKeyboard": {
     "prefix": "nnk",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-number-keyboard v-model:visible=\"${1}\" @input=\"${2}\" @delete=\"${3}\" @close=\"${4}\">${5}</nut-number-keyboard>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-number-keyboard>"
   },
   "Form: Picker": {
     "prefix": "npi",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-picker :columns=\"${1}\" title=\"${2}\" @confirm=\"${3}\">${4}</nut-picker>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-picker>"
   },
   "Form: Radio": {
     "prefix": "nrd",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-radio-group v-model=\"${1}\">",
+      "\t<nut-radio label=\"$2\">${3}</nut-radio>",
+      "</nut-radio-group>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-radio>"
   },
   "Form: Range": {
     "prefix": "nrg",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-range v-model=\"${1}\" @change=\"$2\">${3}</nut-range>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-range>"
   },
   "Form: Rate": {
     "prefix": "nrat",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-rate v-model=\"${1}\">${2}</nut-rate>", "${3}"],
+    "description": "Nut UI <nut-rate>"
   },
   "Form: Searchbar": {
     "prefix": "nsb",

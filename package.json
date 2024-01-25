@@ -1,7 +1,7 @@
 {
   "name": "nut-ui-snippets",
   "displayName": "Nut UI Snippets",
-  "description": "nut ui组件标签快捷键，支持vue3 react",
+  "description": "Nut UI组件标签快捷键,支持Vue和React",
   "version": "0.0.1",
   "publisher": "Jason Lai",
   "author": {
