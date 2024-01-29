@@ -288,237 +288,445 @@
   },
   "Form: Searchbar": {
     "prefix": "nsb",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-searchbar v-model=\"${1}\" @search=\"${2}\">${3}</nut-searchbar>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-searchbar>"
   },
   "Form: ShortPassword": {
     "prefix": "nspw",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-number-keyboard ",
+      "v-model=\"${1}\"",
+      "v-model:visible=\"$2\"",
+      "@focus=\"$3\"",
+      "@blur=\"$4\"",
+      "/>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-number-keyboard>"
   },
   "Form: Textarea": {
     "prefix": "ntxa",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-textarea v-model=\"${1}\" limit-show max-length=\"$2\">${3}</nut-textarea>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-textarea>"
   },
   "Form: Uploader": {
     "prefix": "nupl",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-uploader :url=\"${1}\" v-model:file-list=\"$2\" maximum=\"$3\">${4}</nut-uploader>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-uploader>"
   },
   "Feedback: ActionSheet": {
     "prefix": "nas",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-action-sheet v-model:visible==\"${1}\" :menu-items=\"$2\" @choose=\"$3\">${4}</nut-action-sheet>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-action-sheet>"
   },
   "Feedback: Backtop": {
     "prefix": "nbt",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-backtop >",
+      "\t<template #content>",
+      "$1",
+      "\t</template>",
+      "</nut-backtop>",
+      "${2}"
+    ],
+    "description": "Nut UI <nut-backtop>"
   },
   "Feedback: Dialog": {
     "prefix": "ndi",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-dialog title=\"${1}\" content=\"$2\" v-model:visible=\"$3\" @cancel=\"$4\" @ok=\"$5\">${6}</nut-dialog>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-dialog>"
   },
   "Feedback: Drag": {
     "prefix": "ndr",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-drag direction=\"${1|x|y|}\">${2}</nut-drag>", "${3}"],
+    "description": "Nut UI <nut-drag>"
   },
   "Feedback: Notify": {
     "prefix": "nnot",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-notify v-model:visible==\"${1}\" :msg=\"$2\"  @click=\"$3\" @closed=\"$4\">${5}</nut-notify>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-notify>"
   },
   "Feedback: Swipe": {
     "prefix": "nswp",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-swipe>${1}</nut-swipe>", "${2}"],
+    "description": "Nut UI <nut-swipe>"
   },
   "Feedback: Switch": {
     "prefix": "nswt",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-switch v-model=\"${1}\">${2}</nut-switch>", "${3}"],
+    "description": "Nut UI <nut-switch>"
   },
   "Feedback: Toast": {
     "prefix": "ntoa",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-toast v-model:visible=\"${1}\" :type=\"$2\" :msg=\"$3\" @closed=\"$4\" :cover=\"$5\">${6}</nut-toast>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-toast>"
   },
   "Display: Animate": {
     "prefix": "nani",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-animate type=\"${1}\" :show=\"$2\">${3}</nut-animate>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-animate>"
   },
   "Display: Avatar": {
     "prefix": "nava",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-avatar size=\"${1}\">${2}</nut-avatar>", "${3}"],
+    "description": "Nut UI <nut-avatar>"
   },
   "Display: Badge": {
     "prefix": "nbad",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-badge :value=\"${1}\">${2}</nut-badge>", "${3}"],
+    "description": "Nut UI <nut-badge>"
   },
   "Display: CircleProgress": {
     "prefix": "ncp",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-circle-progress :progress=\"${1}\">${2}</nut-circle-progress>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-circle-progress>"
   },
   "Display: Collapse": {
     "prefix": "ncla",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-collapse v-model=\"${1}\" @change=\"$2\">",
+      "\t<nut-collapse-item name=\"$3\" title=\"$4\">",
+      "\t</nut-collapse-item>",
+      "\t<nut-collapse-item name=\"$5\" title=\"$6\">",
+      "\t\t<template #title>$7</template>",
+      "\t\t<template #value>$8</template>",
+      "\t</nut-collapse-item>",
+      "</nut-collapse>",
+      "${9}"
+    ],
+    "description": "Nut UI <nut-collapse>"
   },
   "Display: Countdown": {
     "prefix": "ncd",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-countdown :end-time==\"${1}\">${2}</nut-countdown>", "${3}"],
+    "description": "Nut UI <nut-countdown>"
   },
   "Display: Countup": {
     "prefix": "ncu",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-countup :init-num=\"${1}\" :end-num=\"$2\">${3}</nut-countup>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-countup>"
   },
   "Display: Ellipsis": {
     "prefix": "neli",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-ellipsis content=\"${1}\" direction=\"$2\">${3}</nut-ellipsis>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-ellipsis>"
   },
   "Display: Empty": {
     "prefix": "nemp",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-empty description=\"${1}\">${2}</nut-empty>", "${3}"],
+    "description": "Nut UI <nut-empty>"
   },
   "Display: ImagePreview": {
     "prefix": "nip",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-image-preview :show=\"${1}\" :images=\"$2\" @close=\"$3\">${4}</nut-image-preview>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-image-preview>"
   },
   "Display: List": {
     "prefix": "nli",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-list :height=\"${1}\" :listData=\"$2\" @scroll-bottom=\"$3\">",
+      "\t<template v-slot=\"{ item, index }\">",
+      "\t</template>",
+      "</nut-list>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-list>"
   },
   "Display: Noticebar": {
     "prefix": "nnob",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-noticebar text=\"${1}\" :background=\"$2\" :color=\"$3\">${4}</nut-noticebar>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-noticebar>"
   },
   "Display: Popover": {
     "prefix": "npov",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-popover v-model:visible=\"${1}\" :list=\"$2\" location=\"$3\" @choose=\"$4\">${5}</nut-popover>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-popover>"
   },
   "Display: Price": {
     "prefix": "npri",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-price :price=\"${1}\" size=\"${2|small|normal|large|}\">${3}</nut-price>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-price>"
   },
   "Display: Progress": {
     "prefix": "npro",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-progress :percentage=\"${1}\">${2}</nut-progress>", "${3}"],
+    "description": "Nut UI <nut-progress>"
   },
   "Display: Skeleton": {
     "prefix": "nske",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-skeleton width=\"${1}\" height=\"$2\" animated>${3}</nut-skeleton>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-skeleton>"
   },
   "Display: Steps": {
     "prefix": "nste",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-steps :current=\"${1}\" @click-step=\"$2\">",
+      "\t<nut-step title=\"$3\">$4</nut-step>",
+      "</nut-steps>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-steps>"
   },
   "Display: Swiper": {
     "prefix": "nswi",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-swiper :init-page=\"${1}\" :pagination-visible=\"$2\" pagination-color=\"$3\" auto-play=\"$4\">",
+      "\t<nut-swiper-item v-for=\"item in $5\" :key=\"$6\">",
+      "\t</nut-swiper-item>",
+      "</nut-swiper>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-swiper>"
   },
   "Display: Table": {
     "prefix": "nt",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-table :columns=\"${1}\" :data=\"$2\">${3}</nut-table>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-table>"
   },
   "Display: Tag ": {
     "prefix": "ntag",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-tag type=\"${1|primary|success|danger|warning}\">${2}</nut-tag>",
+      "${3}"
+    ],
+    "description": "Nut UI <nut-tag>"
   },
   "Display: Tour": {
     "prefix": "ntou",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-tour v-model=\"${1}\" :steps=\"$2\" type=\"$3\" location=\"$4\">${5}</nut-tour>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-tour>"
   },
   "Display: TrendArrow": {
     "prefix": "ntra",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-trend-arrow title=\"${1}\" :rate=\"$2\">${3}</nut-trend-arrow>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-trend-arrow>"
   },
   "Display: Watermark": {
     "prefix": "nwm",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": ["<nut-watermark v-if=\"${1}\">${2}</nut-watermark>", "${3}"],
+    "description": "Nut UI <nut-watermark>"
   },
   "Character: Address": {
     "prefix": "nar",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-address ",
+      "\tv-model=\"${1}\"",
+      "\tv-model:visible=\"$2\"",
+      "\t:province=\"$3\"",
+      "\t:city=\"$4\"",
+      "\t:country=\"$5\"",
+      "\t:town=\"$6\"",
+      "\t@change=\"$7\"",
+      "\t@close=\"$8\"",
+      "\tcustom-address-title=\"$9\"",
+      ">",
+      "</nut-address>",
+      "${10}"
+    ],
+    "description": "Nut UI <nut-address>"
   },
   "Character: AddressList": {
     "prefix": "narl",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-address-list",
+      "\tlong-press",
+      "\t:data=\"${1}\"",
+      "\t:data-options=\"${2}\"",
+      "\t@del-icon=\"${3}\"",
+      "\t@edit-icon=\"${4}\"",
+      "\t:show-bottom-button=\"${5}\"",
+      "\t:data-options=\"${5}\"",
+      "\t@click-item=\"${7}\"",
+      "\t@long-copy=\"${8}\"",
+      "\t@long-set=\"${9}\"",
+      "\t@long-del=\"${10}\"",
+      ">",
+      "</nut-address-list>",
+      "${11}"
+    ],
+    "description": "Nut UI <nut-address-list>"
   },
   "Character: AvatarCropper": {
     "prefix": "nac",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-avatar-cropper shape=\"${1|square|round}\" @confirm=\"$2\">${3}</nut-avatar-cropper>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-avatar-cropper>"
   },
   "Character: Barrage": {
     "prefix": "nbar",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-barrage ref=\"${1}\" :danmu=\"$2\">${3}</nut-barrage>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-barrage>"
   },
   "Character: Card": {
     "prefix": "ncard",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-card",
+      "\t:img-url=\"${1}\">",
+      "\t:title=\"${2}\">",
+      "\t:price=\"${3}\">",
+      "\t:vipPrice=\"${4}\">",
+      "\t:shopDesc=\"${5}\">",
+      "\t:delivery=\"${6}\">",
+      "\t:shopName=\"${7}\">",
+      "</nut-card>",
+      "${8}"
+    ],
+    "description": "Nut UI <nut-card>"
   },
   "Character: Category": {
     "prefix": "ncg",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-category :category=\"${1}\" @change=\"$2\">",
+      "\t<nut-category-pane :categoryChild=\"$3\" @onChange=\"$4\">",
+      "\t</nut-category-pane>",
+      "</nut-category>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-category>"
   },
   "Character: Comment": {
     "prefix": "ncm",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-comment",
+      "\t:images=\"${1}\"",
+      "\t:videos=\"${2}\"",
+      "\t:info=\"${3}\"",
+      "\t@click=\"${4}\"",
+      "\t@clickImages=\"${5}\"",
+      "\t:operation=\"${6}\"",
+      ">",
+      "\t<template #comment-labels>",
+      "\t</template>",
+      "</nut-comment>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-comment>"
   },
   "Character: Ecard": {
     "prefix": "nec",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-ecard",
+      "\tv-model=\"${1}\"",
+      "\t:data-list=\"$2\"",
+      "\t@input-change=\"$3\"",
+      "\t@change=\"$4\"",
+      "\t@change-step=\"$5\"",
+      "\t>",
+      "</nut-ecard>",
+      "${6}"
+    ],
+    "description": "Nut UI <nut-ecard>"
   },
   "Character: Invoice": {
     "prefix": "niv",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-invoice :data=\"${1}\" :form-value=\"$2\" @submit=\"$3\">${4}</nut-invoice>",
+      "${5}"
+    ],
+    "description": "Nut UI <nut-invoice>"
   },
   "Character: Signature": {
     "prefix": "nsig",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-signature @confirm=\"${1}\" @clear=\"$2\">${3}</nut-signature>",
+      "${4}"
+    ],
+    "description": "Nut UI <nut-signature>"
   },
   "Character: Sku": {
     "prefix": "nsku",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-sku",
+      "\tv-model:visible=\"${1}\"",
+      "\t:sku=\"${2}\"",
+      "\t:goods=\"${3}\"",
+      "\t@selectSku=\"${4}\"",
+      "\t@clickBtnOperate=\"${5}\"",
+      "\t@close=\"${6}\"",
+      ">",
+      "</nut-sku>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-sku>"
   },
   "Character: TimeSelect": {
     "prefix": "nts",
-    "body": ["<nut-cell title=\"${1}\">${2}</nut-cell>", "${3}"],
-    "description": "Nut UI <nut-cell>"
+    "body": [
+      "<nut-time-select",
+      "\tv-model:visible=\"${1}\"",
+      "\t:current-key=\"${2}\"",
+      "\t:current-time=\"${3}\"",
+      "\t@select=\"${4}\"",
+      ">",
+      "\t<template #pannel>",
+      "\t</template>",
+      "\t<template #detail>",
+      "\t</template>",
+      "</nut-time-select>",
+      "${7}"
+    ],
+    "description": "Nut UI <nut-time-select>"
   }
 }
