@@ -21,17 +21,27 @@
     "description": "Nut UI <nut-config-provider>"
   },
   "Basic: Overlay": {
-    "prefix": "nol",
+    "prefix": "novl",
     "body": [
-      "<nut-overlay v-model:visible=\"${1}\" :close-on-click-overlay=\"${2}\" :lock-scroll=\"${3}\" :duration=\"${4}\" :z-index=\"${5}\">${6}</nut-overlay>",
-      "${6}"
+      "<nut-overlay",
+      "\tv-model:visible=\"${1}\"",
+      "\t:close-on-click-overlay=\"${2}\"",
+      "\t:lock-scroll=\"${3}\"",
+      "\t:duration=\"${4}\"",
+      "\t:z-index=\"${5}\"",
+      ">${6}</nut-overlay>",
+      "${7}"
     ],
     "description": "Nut UI <nut-overlay>"
   },
   "Basic: Popup": {
     "prefix": "npop",
     "body": [
-      "<nut-popup v-model:visible=\"${1}\" position=\"${2}\" closeable>${3}</nut-popup>",
+      "<nut-popup",
+      "\tv-model:visible=\"${1}\"",
+      "\tposition=\"${2|center,top,bottom,left,right|}\"",
+      "\tcloseable",
+      ">${3}</nut-popup>",
       "${4}"
     ],
     "description": "Nut UI <nut-popup>"
@@ -47,68 +57,99 @@
   "Layout: Grid": {
     "prefix": "ngrid",
     "body": [
-      "<nut-grid :column-num=\"$1\" direction=\"${2|vertical|horizontal|}\">",
-      "\t<nut-grid-item v-for=\"(${3:grid}, ${4:index}) in ${5:grids}",
+      "<nut-grid :column-num=\"$1\" direction=\"${2|vertical,horizontal|}\">",
+      "\t<nut-grid-item v-for=\"(${3:grid}, ${4:index}) in ${5:grids}\"",
       "\t:key=\"${6:index}\"",
-      "\ttext=\"$7\"",
-      "\t\\>",
+      "\ttext=\"$7\">",
+      "\t$8",
       "\t</nut-grid-item>",
       "</nut-grid>",
-      "$8"
+      "$9"
     ],
     "description": "Nut UI <nut-grid>"
   },
   "Layout: Layout": {
-    "prefix": "nlyt",
+    "prefix": "nlay",
     "body": [
       "<nut-row type=\"$1\">",
-      "\t<nut-col :span=\"$3\">",
-      "\t$4",
+      "\t<nut-col :span=\"$2\">",
+      "\t$3",
       "\t</nut-col>",
       "</nut-row>",
-      "$5"
+      "$4"
     ],
     "description": "Nut UI <nut-row>"
   },
   "Layout: Space": {
-    "prefix": "nspa",
+    "prefix": "nspace",
     "body": [
-      "<nut-space direction=\"${1|direction|horizontal|}\">${2}</nut-space>",
+      "<nut-space direction=\"${1|direction,horizontal|}\">${2}</nut-space>",
       "${3}"
     ],
     "description": "Nut UI <nut-space>"
   },
   "Layout: Sticky": {
-    "prefix": "nsti",
-    "body": ["<nut-sticky top=\"${1}\">${2}</nut-sticky>", "${3}"],
+    "prefix": "nsticky",
+    "body": [
+      "<nut-sticky position=\"${1|top,bottom|}\" top=\"${2}\" bottom=\"$3\">${4}</nut-sticky>",
+      "${5}"
+    ],
     "description": "Nut UI <nut-sticky>"
   },
   "Navigation: Elevator": {
-    "prefix": "nevt",
-    "body": ["<nut-elevator :index-list=\"${1}\">${2}</nut-elevator>", "${3}"],
+    "prefix": "nelevator",
+    "body": [
+      "<nut-elevator",
+      "\theight=\"$1\"",
+      "\taccept-key=\"$2\"",
+      "\t:index-list=\"${3}\"",
+      "\t:is-sticky=\"${4|true,false|}\"",
+      ">${5}</nut-elevator>",
+      "${6}"
+    ],
     "description": "Nut UI <nut-elevator>"
   },
   "Navigation: FixedNav": {
-    "prefix": "nfn",
+    "prefix": "nfixednav",
     "body": [
-      "<nut-fixed-nav v-model:visible=\"${1}\" :nav-list=\"$2\" :position=\"$3\">${4}</nut-fixed-nav>",
-      "${5}"
+      "<nut-fixed-nav",
+      "\ttype=\"${1|left,right|}\"",
+      "\tv-model:visible=\"${2}\"",
+      "\t:nav-list=\"$3\"",
+      "\t:position=\"$4\"",
+      "\tactive-color=\"$5\"",
+      "\tactive-text=\"\"$6",
+      "\tun-active-text=\"$7\"",
+      "\t:overlay=\"${8|true|}\"",
+      ">${9}</nut-fixed-nav>",
+      "${10}"
     ],
     "description": "Nut UI <nut-fixed-nav>"
   },
   "Navigation: Indicator": {
-    "prefix": "nic",
+    "prefix": "nindicator",
     "body": [
-      "<nut-indicator :size=\"${1}\" :current=\"$2\">${3}</nut-indicator>",
-      "${4}"
+      "<nut-indicator",
+      "\talign=\"${1|left,right,center|}\"",
+      "\t:size=\"${2}\" :current=\"$3\"",
+      "\t:fill-zero=\"true\"",
+      "\t:block=\"true\"",
+      ">${4}</nut-indicator>",
+      "${5}"
     ],
     "description": "Nut UI <nut-indicator>"
   },
   "Navigation: Menu": {
     "prefix": "nmenu",
     "body": [
-      "<nut-menu title=\"${1}\">",
-      "\t<nut-menu-item v-model=\"$2\" />",
+      "<nut-menu",
+      "\tdirection=\"${1|up,down|}\"",
+      "\ttitle=\"${1}\"",
+      "\t:close-on-click-overlay=\"true\"",
+      "\t:overlay=\"true\"",
+      "\t:scroll-fixed=\"\"",
+      ">",
+      "\t\t<nut-menu-item v-model=\"$2\" />",
       "</nut-menu>",
       "${3}"
     ],
